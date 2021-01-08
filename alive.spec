@@ -12,6 +12,7 @@ URL:		http://www.gnu.org/software/alive/
 BuildRequires:	guile-devel
 BuildRequires:	lzip
 BuildRequires:	tar >= 1:1.22
+BuildRequires:	texinfo
 Requires:	/bin/ping
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,6 +44,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	-p /sbin/postshell
+-/usr/sbin/fix-info-dir -c %{_infodir}
+
+%postun	-p /sbin/postshell
+-/usr/sbin/fix-info-dir -c %{_infodir}
 
 %files
 %defattr(644,root,root,755)
