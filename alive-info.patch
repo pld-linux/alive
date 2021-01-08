@@ -1,0 +1,14 @@
+--- alive-2.0.3/doc/alive.texi.orig	2021-01-01 20:14:57.000000000 +0100
++++ alive-2.0.3/doc/alive.texi	2021-01-08 16:53:15.742087561 +0100
+@@ -21,9 +21,9 @@
+ @end quotation
+ @end copying
+ 
+-@dircategory Utilities
++@dircategory Net utilities:
+ @direntry
+-* Alive: (alive).                   Periodically ping some hosts.
++* Alive: (alive).			Periodically ping some hosts
+ @end direntry
+ 
+ @titlepage
