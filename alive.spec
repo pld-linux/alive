@@ -14,6 +14,7 @@ BuildRequires:	lzip
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	texinfo
 Requires:	/bin/ping
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
