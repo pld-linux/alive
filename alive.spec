@@ -1,12 +1,12 @@
 Summary:	GNU Alive - periodic ping program
 Summary(pl.UTF-8):	GNU Alive - program do okresowego pingowania
 Name:		alive
-Version:	2.0.3
+Version:	2.0.4
 Release:	1
 License:	GPL v3+
 Group:		Applications/Networking
 Source0:	https://ftp.gnu.org/gnu/alive/%{name}-%{version}.tar.lz
-# Source0-md5:	581bdd71019a9e491e52340dce00b3f4
+# Source0-md5:	ca2ea2b7cd8d8c976b0058aeefc1820f
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/alive/
 BuildRequires:	guile-devel
